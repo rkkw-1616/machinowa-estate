@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+:root {
+  /* ========================================
+    Colors
+  ======================================== */
+  --main-color: #005BAC;
+  --sub-color: #2F80ED;
+  --accent-color: #F5A623;
+  --text-color: #333333;
+  --bg-color: #F7FAFC;
+  --white: #FFFFFF;
+}
