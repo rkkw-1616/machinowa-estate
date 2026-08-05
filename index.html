@@ -11,7 +11,7 @@
   <header class="l-header">
     <div class="p-header">
       <div class="p-header__left">
-        <a class="c-logo" href="#">./assets/images/...</a>
+        <a href="#"><img class="c-logo"></a>
       </div>
       <div class="p-header__right">
         <a class="c-headerButton" href="#">
@@ -22,32 +22,361 @@
         </a>
       </div>
       <ul class="p-header__nav">
-        <li class="p-nav__item">物件を探す</li>
-        <li class="p-nav__item">エリアから探す<li>
-        <li class="p-nav__item">サービス<li>
-        <li class="p-nav__item">まち情報<li>
-        <li class="p-nav__item">会社案内<li>
-        <li class="p-nav__item">お知らせ<li>
-        <li class="p-nav__item">お問い合わせ<li>
+        <li class="p-nav__item"><a href="#">物件を探す</a></li>
+        <li class="p-nav__item"><a href="#">エリアから探す</a></li>
+        <li class="p-nav__item"><a href="#">サービス</a></li>
+        <li class="p-nav__item"><a href="#">まち情報</a></li>
+        <li class="p-nav__item"><a href="#">会社案内</a></li>
+        <li class="p-nav__item"><a href="#">お知らせ</a></li>
+        <li class="p-nav__item"><a href="#">お問い合わせ</a></li>
       </ul>
     </div>
   </header>
   <main class="l-main">
     <section class="p-hero">
+      <img class="c-heroImage">
       <div class="p-hero__inner">
         <div class="p-hero__contents">
           <span class="c-heroLabel">地域密着の住まい探し</span>
           <h2 class="c-heroTitle">この街で見つける、<br>これからの暮らし。</h2>
-          <span class="c-heroText">まちのわ不動産は、千葉県北西部を中心に、住まい探しと地域の暮らしをつなぐ不動産会社です。</span>
-          <a class="c-heroButton" href="#">
+          <p class="c-heroText">まちのわ不動産は、千葉県北西部を中心に、住まい探しと地域の暮らしをつなぐ不動産会社です。</p>
+          <a class="c-mainButton" href="#">
             <span class="c-text">詳しく見る</span>
             <span class="c-buttonArrow"></span>
           </a>
         </div>
       </div>
     </section>
+    <section class="p-search">
+      <div class="p-main__contents">
+        <div class="p-search__inner">
+          <h3 class="c-mainTitle">Search</h3>
+          <span class="c-mainHeading">目的から探す</span>
+          <p class="c-mainText">賃貸・売買・新築戸建て・土地など、ご希望に合わせて住まいを探せます。</p>  
+        </div>
+        <div class="p-search__body">
+          <a class="p-search__card" href="#">
+            <img class="c-searchIcon">
+            <span class="c-searchHeading">賃貸物件を探す</span>
+            <p class="c-searchText">一人暮らしからファミリー向けまで、暮らしに合うお部屋をご紹介します。</p>
+          </a>
+          <a class="p-search__card" href="#">
+            <img class="c-searchIcon">
+            <span class="c-searchHeading">売買物件を探す</span>
+            <p class="c-searchText">戸建て・マンションなど、購入を検討している方におすすめです。</p>
+          </a>
+          <a class="p-search__card" href="#">
+            <img class="c-searchIcon">
+            <span class="c-searchHeading">新築戸建てを探す</span>
+            <p class="c-searchText">家族のこれからに合わせた、新しい住まい探しをサポートします。</p>
+          </a>
+          <a class="p-search__card" href="#">
+            <img class="c-searchIcon">
+            <span class="c-searchHeading">土地を探す</span>
+            <p class="c-searchText">注文住宅や資産活用を検討している方へ、地域の土地情報をご案内します。</p>
+          </a>
+        </div>
+        <form class="p-searchForm">
+          <div class="p-searchForm__item">
+            <label class="c-searchLabel>エリア</label>
+            <select class="p-searchForm__select" id="area" name="area">
+              <option value="">選択してください</option>
+              <option value="funabashi">船橋エリア</option>
+              <option value="ichikawa">市川エリア</option>
+              <option value="kamagaya">鎌ケ谷エリア</option>
+              <option value="matsudo">松戸エリア</option>
+              <option value="kashiwa">柏エリア</option>
+              <option value="chiba">千葉市エリア</option>
+            </select>
+          </div>
+          <div class="p-searchForm__item">
+            <label class="c-searchLabel">物件種別</label>
+            <select class="p-searchForm__select" id="type" name="type">
+              <option value="">選択してください</option>
+              <option value="rent">賃貸</option>
+              <option value="buy">売買</option>
+              <option value="new">新築戸建て</option>
+              <option value="land">土地</option>
+            </select>
+          </div>
+          <button class="c-mainButton c-button--primary" type="submit">検索する</button>
+        </form>
+      </div>
+    </section>
+    <section class="p-service">
+      <div class="p-main__contents">
+        <div class="p-service__inner">
+          <h3 class="c-mainTitle">Service</h3>
+          <span class="c-mainHeading">まちのわ不動産のサービス</span>
+          <p class="c-mainText">住まい探しから住み替え、管理や空き家相談まで、地域に根ざしてサポートします。</p>
+        </div>
+        <div class="p-service__grid">
+          <article class="p-service__card">
+            <img class="c-serviceIcon">
+            <span class="p-serviceHeading">賃貸仲介</span>
+            <p class="p-serviceText">一人暮らしからファミリー物件まで、希望に合ったお部屋をご紹介します。</p>
+          </article>
+          <article class="p-service__card">
+            <img class="c-serviceIcon">
+            <span class="p-serviceHeading">売買仲介</span>
+            <p class="p-serviceText">戸建て・マンション・土地の購入や売却を丁寧にサポートします。</p>
+          </article>
+          <article class="p-service__card">
+            <img class="c-serviceIcon">
+            <span class="p-serviceHeading">不動産管理</span>
+            <p class="p-serviceText">オーナー様の賃貸経営を、募集から管理までお手伝いします。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="p-property">
+      <div class="p-main__contents">
+        <div class="p-service__inner">
+          <h3 class="c-mainTitle">Property</h3>
+          <span class="c-mainHeading">まちのわ不動産のおすすめ物件</span>
+          <p class="c-mainText">まちのわ不動産が選ぶ、暮らしやすさにこだわったおすすめ物件をご紹介します。</p>
+        </div>
+        <div class="p-property__tabs">
+          <button class="c-propertyButton" is-active" type="button" data-category="rent">賃貸</button>
+          <button class="c-propertyButton" type="button" data-category="buy">売買</button>
+          <button class="c-propertyButton" type="button" data-category="new">新築</button>
+        </div>
+        <div class="p-property__list">
+          <article class="p-propertyCard">
+            <img class="c-propertyImage">
+            <div class="p-propertyCard__body">
+              <span class="c-propertyLabel">賃貸</span>
+              <span class="c-propertyTitle">船橋市本町 / 2LDK</span>
+              <span class="c-propertyHeading">12.5万円</span>
+              <p class="c-propertyText">駅徒歩8分。南向き・オートロック付きのファミリー向け物件です。</p>
+              <a class="c-propertyLink" href="#">詳しく見る</a>
+            </div>
+          </article>
+          <article class="p-propertyCard">
+            <img class="c-propertyImage">
+            <div class="p-propertyCard__body">
+              <span class="c-propertyLabel">売買</span>
+              <span class="c-propertyTitle">松戸市新松戸 / 3LDK</span>
+              <span class="c-propertyHeading">3,280万円</span>
+              <p class="c-propertyText">買い物施設が身近にそろう、暮らしやすい中古マンションです。</p>
+              <a class="c-propertyLink" href="#">詳しく見る</a>
+            </div>
+          </article>
+          <article class="p-propertyCard">
+            <img class="c-propertyImage">
+            <div class="p-propertyCard__body">
+              <span class="c-propertyLabel">新築</span>
+              <span class="c-propertyTitle">鎌ケ谷市中央 / 4LDK</span>
+              <span class="c-propertyHeading">3,980万円</span>
+              <p class="c-propertyText">駐車場2台分。小学校徒歩圏内のファミリー向け新築戸建てです。</p>
+              <a class="c-propertyLink" href="#">詳しく見る</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="p-area">
+      <div class="p-main__contents">
+        <div class="p-service__inner">
+          <h3 class="c-mainTitle">Area</h3>
+          <span class="c-mainHeading">街から住まいを探す</span>
+          <p class="c-mainText">通勤・子育て・買い物環境など、暮らし方に合わせて千葉県北西部のエリアをご紹介します。</p>
+        </div>
+        <div class="p-area__grid">
+          <article class="p-areaCard">
+            <span class="c-areaHeading">船橋エリア</span>
+            <p class="c-areaText">交通利便性と生活のしやすさがそろう人気エリア。駅周辺には商業施設が多く、通勤・通学にも便利な街です。</p>
+            <div class="p-areaCard__tags">
+              <span class="c-areaTag">#交通便利</span>
+              <span class="c-areaTag">#買い物充実</span>
+            </div>
+            <a class="c-areaButton" href="#">詳しく見る</a>
+          </article>
+          <article class="p-areaCard">
+            <span class="c-areaHeading">市川エリア</span>
+            <p class="c-areaText">都心へのアクセスと落ち着いた住環境が魅力。歴史や自然も身近にあり、幅広い世代に選ばれるエリアです。</p>
+            <div class="p-areaCard__tags">
+              <span class="c-areaTag">#都心アクセス</span>
+              <span class="c-areaTag">#落ち着いた住環境</span>
+            </div>
+            <a class="c-areaButton" href="#">詳しく見る</a>
+          </article>
+          <article class="p-areaCard">
+            <span class="c-areaHeading">船橋エリア</span>
+            <p class="c-areaText">交通利便性と生活のしやすさがそろう人気エリア。駅周辺には商業施設が多く、通勤・通学にも便利な街です。</p>
+            <div class="p-areaCard__tags">
+              <span class="c-areaTag">#交通便利</span>
+              <span class="c-areaTag">#買い物充実</span>
+            </div>
+            <a class="c-areaButton" href="#">詳しく見る</a>
+          </article>
+          <article class="p-areaCard">
+            <span class="c-areaHeading">鎌ケ谷エリア</span>
+            <p class="c-areaText">穏やかな住宅街と自然が身近な暮らしやすい街。ゆったりとした住環境を求めるファミリーにもおすすめです。</p>
+            <div class="p-areaCard__tags">
+              <span class="c-areaTag">#自然身近</span>
+              <span class="c-areaTag">#ファミリー向け</span>
+            </div>
+            <a class="c-areaButton" href="#">詳しく見る</a>
+          </article>
+          <article class="p-areaCard">
+            <span class="c-areaHeading">松戸エリア</span>
+            <p class="c-areaText">都心へのアクセスと自然のバランスが良いエリア。駅周辺の利便性と落ち着いた住宅街の両方を感じられます。</p>
+            <div class="p-areaCard__tags">
+              <span class="c-areaTag">#通勤便利/span>
+              <span class="c-areaTag">#住宅街</span>
+            </div>
+            <a class="c-areaButton" href="#">詳しく見る</a>
+          </article>
+          <article class="p-areaCard">
+            <span class="c-areaHeading">柏エリア</span>
+            <p class="c-areaText">商業施設や自然が身近にそろう、暮らしの選択肢が広い街。買い物も休日のお出かけも楽しみたい方におすすめです。</p>
+            <div class="p-areaCard__tags">
+              <span class="c-areaTag">#商業施設/span>
+              <span class="c-areaTag">#自然</span>
+            </div>
+            <a class="c-areaButton" href="#">詳しく見る</a>
+          </article>
+          <article class="p-areaCard">
+            <span class="c-areaHeading">千葉市エリア</span>
+            <p class="c-areaText">都市機能と海辺の開放感を感じられる県都エリア。通勤・買い物・子育てまで幅広い暮らしに対応できます。</p>
+            <div class="p-areaCard__tags">
+              <span class="c-areaTag">#都市機能/span>
+              <span class="c-areaTag">#海辺の暮らし</span>
+            </div>
+            <a class="c-areaButton" href="#">詳しく見る</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="p-reason">
+      <div class="p-main__contents">
+        <div class="p-service__inner">
+          <h3 class="c-mainTitle">Reason</h3>
+          <span class="c-mainHeading">まちのわ不動産が選ばれる理由</span>
+          <p class="c-mainText">物件だけでなく、街の暮らしまで見据えた提案で、お客様の住まい探しを支えます。</p>
+        </div>
+        <div class="p-reason__grid">
+          <article class="p-reasonCard">
+            <span class="c-reasonLabel">01</span>
+            <span class="c-reasonHeading">地域に根ざした情報力</span>
+            <p class="c-reasonText">物件情報だけでなく、学校・買い物・交通など暮らしに関わる情報もご案内します。</p>
+          </article>
+          <article class="p-reasonCard">
+            <span class="c-reasonLabel">02</span>
+            <span class="c-reasonHeading">初めてでも相談しやすい</span>
+            <p class="c-reasonText">賃貸・購入・住み替えなど、お客様の状況に合わせて丁寧にサポートします。</p>
+          </article>
+          <article class="p-reasonCard">
+            <span class="c-reasonLabel">03</span>
+            <span class="c-reasonHeading">暮らしまで見据えた提案</span>
+            <p class="c-reasonText">家だけでなく、その先の生活を考えた住まい探しを大切にしています。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="p-column">
+      <div class="p-main__contents">
+        <div class="p-service__inner">
+          <h3 class="c-mainTitle">Column</h3>
+          <span class="c-mainHeading">まちの暮らしガイド</span>
+          <p class="c-mainText">住まい探しに役立つ情報や、街の暮らしを知るためのコラムをお届けします。</p>
+        </div>
+        <div class="p-column__grid">
+          <article class="p-column__card">
+            <span class="c-columnTitle">一人暮らし</span>
+            <span class="c-columnHeading">初めての一人暮らしで確認したい5つのこと</span>
+            <p class="c-columnText">契約前に見ておきたい設備や周辺環境のポイントをご紹介します。</p>
+            <a class="c-columnButton">読む</a>
+          </article>
+          <article class="p-column__card">
+            <span class="c-columnTitle">子育て</span>
+            <span class="c-columnHeading">子育て世帯に人気のエリア選び</span>
+            <p class="c-columnText">学校・公園・買い物環境など、家族で暮らす街選びの視点をまとめました。</p>
+            <a class="c-columnButton">読む</a>
+          </article>
+          <article class="p-column__card">
+            <span class="c-columnTitle">住まい探し</span>
+            <span class="c-columnHeading">駅徒歩だけで決めない、住まい探しのポイント</span>
+            <p class="c-columnText">毎日の暮らしやすさを考えた、物件選びのチェックポイントをご紹介します。</p>
+            <a class="c-columnButton">読む</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="p-voice">
+      <div class="p-main__contents">
+        <div class="p-service__inner">
+          <h3 class="c-mainTitle">Voice</h3>
+          <span class="c-mainHeading">お客様の声</span>
+          <p class="c-mainText">まちのわ不動産で住まいを見つけたお客様からの声をご紹介します。</p>
+        </div>
+        <div class="p-voice__grid">
+          <article class="p-voice__card">
+            <span class="c-voiceHeading">船橋市 / 30代ご家族</span>
+            <p class="c-voiceText">子どもの通学や買い物環境まで教えていただき、安心して住まいを決められました。</p>
+          </article>
+          <article class="p-voice__card">
+            <span class="c-voiceHeading">市川市 / 20代</span>
+            <p class="c-voiceText">初めての部屋探しでしたが、契約の流れも丁寧に説明してもらえました。</p>
+          </article>
+          <article class="p-voice__card">
+            <span class="c-voiceHeading">鎌ケ谷市 / 40代ご家族</span>
+            <p class="c-voiceText">希望条件だけでなく、暮らし方に合うエリアを提案してもらえたのが良かったです。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="p-news">
+      <div class="p-main__contents">
+        <div class="p-service__inner">
+          <h3 class="c-mainTitle">News</h3>
+          <span class="c-mainHeading">お知らせ</span>
+          <p class="c-mainText">新着物件やイベント、営業日に関するお知らせを掲載しています。</p>
+        </div>
+        <div class="p-news__tabs">
+          <button class="c-newsButton">すべて</button>
+          <button class="c-newsButton">物件情報</button>
+          <button class="c-newsButton">イベント</button>
+          <button class="c-newsButton">お知らせ</button>
+        </div>
+        <ul class="p-newsList">
+          <li class="p-newsList__item">
+            <a href="#">
+              <time class="p-news__date" datetime="2026-08-01">2026.08.01</time>
+              <span class="p-newsLabel">お知らせ</span>
+              <span class="p-newsHeading">夏季休業のお知らせ</span>
+            </a>
+          </li>
+          <li class="p-newsList__item">
+            <a href="#">
+              <time class="p-news__date" datetime="2026-07-25">2026.07.25</time>
+              <span class="p-newsLabel">物件情報</span>
+              <span class="p-newsHeading">船橋市エリアの新着物件を公開しました</span>
+            </a>
+          </li>
+          <li class="p-newsList__item">
+            <a href="#">
+              <time class="p-news__date" datetime="2026-07-18">2026.07.18</time>
+              <span class="p-newsLabel">イベント</span>
+              <span class="p-newsHeading">はじめての住宅購入相談会を開催します</span>
+            </a>
+          </li>
+          <li class="p-newsList__item">
+            <a href="#">
+              <time class="p-news__date" datetime="2026-07-10">2026.07.10</time>
+              <span class="p-newsLabel">お知らせ</span>
+              <span class="p-newsHeading">サイトリニューアルのお知らせ</span>
+            </a>
+          </li>
+        </ul>
+
+    </section>
+    <section class="p-contact"></section>
   </main>
   <footer class="l-footer">
+    <div class="p-footer">
+    </div>
   </footer>
 </body>
 </html>
