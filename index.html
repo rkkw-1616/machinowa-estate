@@ -14,22 +14,53 @@
         <a href="#"><img class="c-logo"></a>
       </div>
       <div class="p-header__right">
-        <a class="c-headerButton" href="#">
-          <span class="c-text c-text--white">来店予約</span>
+        <a class="c-headerButton c-headerButton--main-color" href="#">
+          <span class="c-headerText c-headerText--white">来店予約</span>
         </a>
         <a class="c-headerButton" href="#">
-          <span class="c-text">お問い合わせ</span>
+          <span class="c-headerText c-headerText--main-color">お問い合わせ</span>
         </a>
       </div>
-      <ul class="p-header__nav">
-        <li class="p-nav__item"><a href="#">物件を探す</a></li>
-        <li class="p-nav__item"><a href="#">エリアから探す</a></li>
-        <li class="p-nav__item"><a href="#">サービス</a></li>
-        <li class="p-nav__item"><a href="#">まち情報</a></li>
-        <li class="p-nav__item"><a href="#">会社案内</a></li>
-        <li class="p-nav__item"><a href="#">お知らせ</a></li>
-        <li class="p-nav__item"><a href="#">お問い合わせ</a></li>
-      </ul>
+      <div class="p-nav">
+        <ul class="p-nav__list">
+          <li class="p-nav__item">
+            <a class="c-navLink" href="#">
+              <img class="c-navIcon--sp">
+              <span class="c-navText">物件を探す<span>
+            </a>
+          </li>
+          <li class="p-nav__item">
+            <a class="c-navLink" href="#">
+              <img class="c-navIcon--sp">
+              <span class="c-navText">サービス<span>
+            </a>
+          </li>
+          <li class="p-nav__item">
+            <a class="c-navLink" href="#">
+              <img class="c-navIcon--sp">
+              <span class="c-navText">おすすめ物件<span>
+            </a>
+          </li>
+          <li class="p-nav__item">
+            <a class="c-navLink" href="#">
+              <img class="c-navIcon--sp">
+              <span class="c-navText">まち情報<span>
+            </a>
+          </li>
+          <li class="p-nav__item">
+            <a class="c-navLink" href="#">
+              <img class="c-navIcon--sp">
+              <span class="c-navText">お知らせ<span>
+            </a>
+          </li>
+          <li class="p-nav__item">
+            <a class="c-navLink" href="#">
+              <img class="c-navIcon--sp">
+              <span class="c-navText">お問い合わせ<span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <main class="l-main">
@@ -37,11 +68,11 @@
       <img class="c-heroImage">
       <div class="p-hero__inner">
         <div class="p-hero__contents">
-          <span class="c-heroLabel">地域密着の住まい探し</span>
+          <span class="c-heroHeading">地域密着の住まい探し</span>
           <h2 class="c-heroTitle">この街で見つける、<br>これからの暮らし。</h2>
           <p class="c-heroText">まちのわ不動産は、千葉県北西部を中心に、住まい探しと地域の暮らしをつなぐ不動産会社です。</p>
           <a class="c-mainButton" href="#">
-            <span class="c-text">詳しく見る</span>
+            <span class="c-buttonText">詳しく見る</span>
             <span class="c-buttonArrow"></span>
           </a>
         </div>
@@ -131,7 +162,7 @@
     </section>
     <section class="p-property">
       <div class="p-main__contents">
-        <div class="p-service__inner">
+        <div class="p-property__inner">
           <h3 class="c-mainTitle">Property</h3>
           <span class="c-mainHeading">まちのわ不動産のおすすめ物件</span>
           <p class="c-mainText">まちのわ不動産が選ぶ、暮らしやすさにこだわったおすすめ物件をご紹介します。</p>
@@ -177,7 +208,7 @@
     </section>
     <section class="p-area">
       <div class="p-main__contents">
-        <div class="p-service__inner">
+        <div class="p-area__inner">
           <h3 class="c-mainTitle">Area</h3>
           <span class="c-mainHeading">街から住まいを探す</span>
           <p class="c-mainText">通勤・子育て・買い物環境など、暮らし方に合わせて千葉県北西部のエリアをご紹介します。</p>
@@ -251,7 +282,7 @@
     </section>
     <section class="p-reason">
       <div class="p-main__contents">
-        <div class="p-service__inner">
+        <div class="p-reason__inner">
           <h3 class="c-mainTitle">Reason</h3>
           <span class="c-mainHeading">まちのわ不動産が選ばれる理由</span>
           <p class="c-mainText">物件だけでなく、街の暮らしまで見据えた提案で、お客様の住まい探しを支えます。</p>
@@ -277,7 +308,7 @@
     </section>
     <section class="p-column">
       <div class="p-main__contents">
-        <div class="p-service__inner">
+        <div class="p-column__inner">
           <h3 class="c-mainTitle">Column</h3>
           <span class="c-mainHeading">まちの暮らしガイド</span>
           <p class="c-mainText">住まい探しに役立つ情報や、街の暮らしを知るためのコラムをお届けします。</p>
@@ -329,7 +360,7 @@
     </section>
     <section class="p-news">
       <div class="p-main__contents">
-        <div class="p-service__inner">
+        <div class="p-news__inner">
           <h3 class="c-mainTitle">News</h3>
           <span class="c-mainHeading">お知らせ</span>
           <p class="c-mainText">新着物件やイベント、営業日に関するお知らせを掲載しています。</p>
@@ -369,13 +400,46 @@
               <span class="p-newsHeading">サイトリニューアルのお知らせ</span>
             </a>
           </li>
+          <a class="p-news__button" href="#">お知らせ一覧を見る</a>
         </ul>
-
+       </div>
     </section>
-    <section class="p-contact"></section>
+    <section class="p-contact">
+      <div class="p-main__contents">
+        <div class="p-contact__inner">
+          <h3 class="c-mainTitle">Contact</h3>
+          <span class="c-mainHeading">お問い合わせ</span>
+          <p class="c-mainText">住まい探しのこと、まずはお気軽にご相談ください。<br>ご希望の条件が決まっていない方も、地域のことから一緒に考えます。</p>
+        </div>
+        <div class="p-contact__body">
+          <a class="c-contactButton">
+            <span class="c-contantText">お問い合わせ</span>
+          </a>
+          <a class="c-contactButton">
+            <span class="c-contactText">来店予約</span>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="l-footer">
     <div class="p-footer">
+      <div class="p-footer__inner">
+        <div class="p-footer__company">
+          <span class="c-footerHeading">まちのわ不動産<br>住まいと街を、ひとつの輪に。</span>
+          <p class="c-footerText">〒273-0000<br>千葉県船橋市まちのわ町1-2-3 まちのわビル2F<br>TEL：047-000-0000<br>営業時間：10:00～18:00 / 定休日：水曜日</p>
+      </div>
+      <div class="p-footer__media">
+        <img class="c-snsIcon" href="#">
+        <img class="c-snsIcon" href="#">
+        <img class="c-snsIcon" href="#">
+        <img class="c-snsIcon" href="#">
+      </div>
+      <div class="p-footer__bottom">
+        <p class="c-copyright">
+          <small>&copy; 2026 Machinowa Real Estate. All Rights Reserved.</small>
+        </p>
+      </div>
     </div>
   </footer>
 </body>
