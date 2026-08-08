@@ -5,9 +5,9 @@
     Colors
   ======================================== */
   --main-color: #005BAC;
-  --sub-color: #2F80ED;
+  --sub-color: #D7EEFF;
   --accent-color: #F5A623;
-  --bg-color: #F7FAFC;
+  --bg-color: #FFFCF7;
   --gray: #e5e7eb;
   --white: #FFFFFF;
 }
@@ -43,23 +43,114 @@
 }
 
 .p-nav {
-  padding: 0 56px;
+  padding: 24px 56px 16px;
+  border-bottom: 1px solid var(--gray);
 }
 
-.p-nav__List {
+.p-nav__list {
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
 }
 
-.p-navText {
-  font-size: 20px;
+.p-nav__item {
+  border-right: 2px solid var(--gray);
+}
+
+.c-navText {
+  font-size: 18px;
   font-weight: bold;
 }
 
 /* ========================================
   Hero
 ======================================== */
+.p-hero {
+  position: relative;
+  background-color: var(--sub-color);
+  height: 494px;
+}
+
+.p-hero__contents {
+  position: absolute;
+  top: 50%;
+}
+
+/* ========================================
+  Main
+======================================== */
+.l-main {
+  background-color: var(--bg-color);
+}
+
+.p-main__inner {
+  padding-top: 56px;
+}
+
+.c-mainHeading {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.c-mainTitle {
+  font-size: 28px;
+}
+
+.c-mainText {
+  max-width: 700px;
+  color: #555;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+/* ========================================
+  Search
+======================================== */
+.p-search {
+  margin: 0 200px;
+}
+
+.p-search__body {
+  padding: 30px 0;
+}
+
+.p-searchForm {
+  display: flex;
+}
+
+.p-searchForm__item {
+  padding-right: 20px;
+}
+
+/* ========================================
+  Service
+======================================== */
+.p-service {
+  margin: 0 200px;
+}
+
+.p-service__grid {
+  display: flex;
+}
+
+.p-service__card {
+  width: 180px;
+  border-radius: 8px;
+  border: 1px solid var(--gray);
+  align-content: center;
+}
+
+.c-serviceIcon {
+  width: 48px;
+  height: 48px;
+}
+
+.c-serviceHeading {
+  font-size: 14px;
+}
 
 /* ========================================
   Footer
