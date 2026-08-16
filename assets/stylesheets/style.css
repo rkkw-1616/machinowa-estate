@@ -213,6 +213,14 @@
   margin: 0 100px;
 }
 
+.p-property__list {
+  display: flex;
+}
+
+.c-propertyImage {
+  width: 400px;
+}
+
 /* ========================================
   Footer
 ======================================== */
